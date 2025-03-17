@@ -99,7 +99,7 @@ Pilihan Menu :
                     for (int i = 0; i < elemen; i++) {
                         cout << i + 1 << ". Nama: " << character[i][0] << "\n   Bounty: " << character[i][1] << endl;
                     }
-                    cout << "Masukkan Nomor Data Yang Ingin Diubah: ";
+                    cout << "Masukkan Nomor Data Yang Ingin Dihapus: ";
                     cin >> index;
                     if (index > 0 && index <= elemen) {
                         for (int i = index - 1; i < elemen - 1; i++) {
