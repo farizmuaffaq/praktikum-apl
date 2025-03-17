@@ -39,7 +39,7 @@ int main(){
         cout<<R"(
 ============================
 Pilihan Menu :
-1. Tambahkan Data
+1. Tampilkan Data
 2. Tampilkan Semua Data
 3. Ubah Data
 4. Hapus Data
