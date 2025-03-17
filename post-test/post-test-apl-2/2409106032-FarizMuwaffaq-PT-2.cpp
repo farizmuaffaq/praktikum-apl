@@ -39,8 +39,8 @@ int main(){
         cout<<R"(
 ============================
 Pilihan Menu :
-1. Tampilkan Data
-2. Tampilkan Semua Data
+1. Tampilkan Semua Data
+2. Tambahkan Data
 3. Ubah Data
 4. Hapus Data
 5. Keluar Program
