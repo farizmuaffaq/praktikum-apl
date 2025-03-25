@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 #define MAXChar 100
-#define Desc 2
 
 struct character {
     string nama[MAXChar];
     int bounty[MAXChar];
-    string gender[MAXChar];
 };
 
 int main(){
@@ -62,7 +60,7 @@ Pilihan Menu :
             } else {
                 cout << "Daftar Karakter" << endl;
                 for (int i = 0; i < elemen; i++) {
-                    cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << "\n   Gender: " << karakter.gender[i] << endl;
+                    cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << endl;
                 }
             }
             break;
@@ -72,8 +70,6 @@ Pilihan Menu :
                 cin >> karakter.nama[elemen];
                 cout << "Berikan Bounty Karakter(Masukkan Dalam Bentuk Angka!): ";
                 cin >> karakter.bounty[elemen];
-                cout << "Masukkan Gender Karakter(L/P): ";
-                cin >> karakter.gender[elemen];
                 elemen++;
                 cout << "Karakter Berhasil Ditambahkan" << endl;
             } else {
@@ -85,7 +81,7 @@ Pilihan Menu :
                     cout << "Belum Ada Data Yang Ditambahkan." << endl;
                 } else {
                     for (int i = 0; i < elemen; i++) {
-                        cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << "\n   Gender: " << karakter.gender[i] << endl;
+                        cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << endl;
                     }
                     cout << "Masukkan Nomor Data Yang Ingin Diubah: ";
                     cin >> index;
@@ -94,8 +90,6 @@ Pilihan Menu :
                         cin >> karakter.nama[index - 1];
                         cout << "Masukkan Bounty Baru(Masukkan Dalam Bentuk Angka!): ";
                         cin >> karakter.bounty[index - 1];
-                        cout << "Masukkan Gender Baru(L/P): ";
-                        cin >> karakter.gender[index - 1];
                         cout << "Data Telah Berhasil Dirubah" << endl;
                     } else {
                         cout << "Nomor Data Tidak Valid" << endl;
@@ -107,7 +101,7 @@ Pilihan Menu :
                     cout << "Belum Ada Data Yang Ditambahkan" << endl;
                 } else {
                     for (int i = 0; i < elemen; i++) {
-                        cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << "\n   Gender: " << karakter.gender[i] << endl;
+                        cout << i + 1 << ". Nama: " << karakter.nama[i] << "\n   Bounty: " << karakter.bounty[i] << endl;
                     }
                     cout << "Masukkan Nomor Data Yang Ingin Dihapus: ";
                     cin >> index;
@@ -115,8 +109,6 @@ Pilihan Menu :
                         for (int i = index - 1; i < elemen - 1; i++) {
                             karakter.nama[i] = karakter.nama[i + 1];
                             karakter.bounty[i] = karakter.bounty[i + 1];
-                            karakter.gender[i] = karakter.gender[i + 1];
-
                         }
                         elemen--;
                         cout << "Data Telah Dihapus" << endl;
