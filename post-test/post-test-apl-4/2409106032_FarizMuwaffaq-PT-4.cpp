@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 #define MAXChar 100
 
 struct Character {
